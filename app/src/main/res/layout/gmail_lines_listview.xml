@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/circle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:text="K"
+        android:textSize="30dp"
+        android:background="@drawable/circle"/>
+
+    <TextView
+        android:id="@+id/hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="12:34 PM"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/circle"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="70dp"
+        android:text="Edurila.com"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignStart="@+id/circle" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_alignLeft="@id/circle"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="30dp"
+        android:text="Test"
+        android:maxLines="2"/>
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/hour"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/star" />
+
+</RelativeLayout>

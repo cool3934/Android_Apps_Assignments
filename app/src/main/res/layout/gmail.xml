@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="#f00000" >
+
+        <ImageView
+            android:id="@+id/dehaze"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/dehaze"
+            android:layout_margin="15dp" />
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:text="Inbox"
+            android:textSize="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/search"
+            android:layout_margin="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="#D3D3D3" >
+
+        <ImageView
+            android:id="@+id/done"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/done"
+            android:layout_margin="15dp" />
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:text="Touch a sender image to select that conversation"
+            android:textSize="20dp"
+            android:maxLines="2"
+            android:layout_margin="15dp"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/close"
+            android:layout_margin="20dp"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/myListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
